@@ -1,0 +1,28 @@
+# Current time Mon Nov  7 01:45:17 2022
+# Program = vsim
+# Id = "2021.2"
+# Version = "2021.04"
+# Date = "Apr 14 2021"
+# Platform = "linux_x86_64"
+# Signature = 4180c34bc81bf15e13c03b3939ce2075
+# 0    0x00000000006bd771: '<unknown (@0x6bd771)>'
+# 1    0x00000000006bd571: '<unknown (@0x6bd571)>'
+# 2    0x00000000006bd979: '<unknown (@0x6bd979)>'
+# 3    0x00000000009d250e: '<unknown (@0x9d250e)>'
+# 4    0x00000000009d2e06: '<unknown (@0x9d2e06)>'
+# 5    0x0000000000caf17c: '<unknown (@0xcaf17c)>'
+# 6    0x0000000000ed3c0d: '<unknown (@0xed3c0d)>'
+# 7    0x00000000038eccbd: '<unknown (@0x38eccbd)>'
+# 8    0x00000000038f1116: '<unknown (@0x38f1116)>'
+# 9    0x00000000038f2801: '<unknown (@0x38f2801)>'
+# 10   0x00000000038f2b66: '<unknown (@0x38f2b66)>'
+# 11   0x00000000011454ed: '<unknown (@0x11454ed)>'
+# 12   0x0000000003992a6f: '<unknown (@0x3992a6f)>'
+# 13   0x00000000039e65e7: '<unknown (@0x39e65e7)>'
+# 14   0x00000000039a94d7: '<unknown (@0x39a94d7)>'
+# 15   0x00000000039a97b9: '<unknown (@0x39a97b9)>'
+# 16   0x000000000378ef5d: '<unknown (@0x378ef5d)>'
+# 17   0x0000000000bced3c: '<unknown (@0xbced3c)>'
+# End of Stack Trace
+
+

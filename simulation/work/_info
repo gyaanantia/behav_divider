@@ -1,0 +1,451 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/cam/Quartus/Sequential_Divider/simulation
+T_opt
+!s110 1667815436
+VM8:N5=N@HlMI6]m<Vk=QK1
+04 10 10 work divider_tb behavioral 1
+=14-000ae431a4f1-6368d80c-c89b0-13f06
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R1
+Ecomparator
+Z2 w1667860884
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 dC:/Users/gyaan/Documents/behavioral_divider/simulation
+Z7 8C:/Users/gyaan/Documents/behavioral_divider/src/comparator.vhd
+Z8 FC:/Users/gyaan/Documents/behavioral_divider/src/comparator.vhd
+l0
+L5
+VTR@2k8hdWNc:V=]1ShlU70
+!s100 8i2ziIH=8Z]aPHgD02mz;1
+Z9 OV;C;10.5b;63
+32
+Z10 !s110 1667866101
+!i10b 1
+Z11 !s108 1667866100.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gyaan/Documents/behavioral_divider/src/comparator.vhd|
+Z13 !s107 C:/Users/gyaan/Documents/behavioral_divider/src/comparator.vhd|
+!i113 1
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+DEx4 work 10 comparator 0 22 TR@2k8hdWNc:V=]1ShlU70
+l21
+L18
+VEUYo^POVDi<:^WMPh5RLQ1
+!s100 @G9nM[ILAX1SEzWV::?cm2
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecomparator_tb
+R2
+Z16 DPx4 work 13 divider_const 0 22 K;E^c2g`1<o9Q;j05VA<g2
+R3
+R4
+R5
+R6
+Z17 8C:/Users/gyaan/Documents/behavioral_divider/src/comparator_tb.vhd
+Z18 FC:/Users/gyaan/Documents/behavioral_divider/src/comparator_tb.vhd
+l0
+L7
+V>WgXNg0?CDN^RoHBBb`3>1
+!s100 PMa`j3nzF6[@GH;2E@``Z3
+R9
+32
+R10
+!i10b 1
+Z19 !s108 1667866101.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gyaan/Documents/behavioral_divider/src/comparator_tb.vhd|
+Z21 !s107 C:/Users/gyaan/Documents/behavioral_divider/src/comparator_tb.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R16
+R3
+R4
+R5
+DEx4 work 13 comparator_tb 0 22 >WgXNg0?CDN^RoHBBb`3>1
+l34
+L18
+Vk>><B1^YTlfGLSZ1R^<YF0
+!s100 J?JJ@N4U9GTYl?bmbeidf1
+R9
+32
+R10
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R14
+R15
+Pdecoder
+R4
+R5
+R2
+R6
+Z22 8C:/Users/gyaan/Documents/behavioral_divider/src/decoder.vhd
+Z23 FC:/Users/gyaan/Documents/behavioral_divider/src/decoder.vhd
+l0
+L5
+V[R5IgOMdiZET?30GAVZeQ1
+!s100 fmPI_RdF8eCMD^Ih_c3WU3
+R9
+32
+R10
+!i10b 1
+R19
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gyaan/Documents/behavioral_divider/src/decoder.vhd|
+Z25 !s107 C:/Users/gyaan/Documents/behavioral_divider/src/decoder.vhd|
+!i113 1
+R14
+R15
+Bbody
+DPx4 work 7 decoder 0 22 [R5IgOMdiZET?30GAVZeQ1
+R4
+R5
+l0
+L20
+V9ZU_VU>Q500l]IN[RH9L_2
+!s100 Kh4zGNA4V?km=AWfl@IbZ2
+R9
+32
+R10
+!i10b 1
+R19
+R24
+R25
+!i113 1
+R14
+R15
+Edisplay_divider
+R2
+R3
+R16
+R4
+R5
+R6
+Z26 8C:/Users/gyaan/Documents/behavioral_divider/src/display_divider.vhd
+Z27 FC:/Users/gyaan/Documents/behavioral_divider/src/display_divider.vhd
+l0
+L6
+VZ^SfSETWo_QJNQhdnJ;g62
+!s100 XYCLIi5S42@fQP11FBdC42
+R9
+32
+R10
+!i10b 1
+R19
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gyaan/Documents/behavioral_divider/src/display_divider.vhd|
+Z29 !s107 C:/Users/gyaan/Documents/behavioral_divider/src/display_divider.vhd|
+!i113 1
+R14
+R15
+Astructural
+R3
+R16
+R4
+R5
+DEx4 work 15 display_divider 0 22 Z^SfSETWo_QJNQhdnJ;g62
+l47
+L23
+VY<m2^3K[T=C?f6Fg:5Nd81
+!s100 VbVg:E:TLI2:eoIY1ib>k2
+R9
+32
+R10
+!i10b 1
+R19
+R28
+R29
+!i113 1
+R14
+R15
+Edivider
+Z30 w1667864884
+R16
+R3
+R4
+R5
+R6
+Z31 8C:/Users/gyaan/Documents/behavioral_divider/src/divider.vhd
+Z32 FC:/Users/gyaan/Documents/behavioral_divider/src/divider.vhd
+l0
+L8
+V426EI5FQ3XB_@_HLBboY80
+!s100 _UkOBTfg^66mBe4nSThIC0
+R9
+32
+R10
+!i10b 1
+R19
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gyaan/Documents/behavioral_divider/src/divider.vhd|
+Z34 !s107 C:/Users/gyaan/Documents/behavioral_divider/src/divider.vhd|
+!i113 1
+R14
+R15
+Afsm_behavior
+R16
+R3
+R4
+R5
+Z35 DEx4 work 7 divider 0 22 426EI5FQ3XB_@_HLBboY80
+l37
+L29
+Vz]8HVWE^ISF:NT;OeFA@H0
+!s100 AhcoT;70hc4KU8RXY6_Z81
+R9
+32
+R10
+!i10b 1
+R19
+R33
+R34
+!i113 1
+R14
+R15
+Abehavioral_sequential
+Z36 DPx4 work 13 divider_const 0 22 hChB`GV6]LocGSDEZ^<T60
+Z37 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R4
+Z38 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z39 DEx4 work 7 divider 0 22 b?aN>XGEzdZ6zjC8dc4@K3
+!i122 301
+l89
+L71 70
+V7BeNTG:j55zB6Y7S?lM=30
+!s100 Z:_zU>:IDN:2?7NIV7>Zn1
+Z40 OL;C;2021.2;73
+32
+Z41 !s110 1667807684
+!i10b 1
+Z42 !s108 1667807684.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/cam/Quartus/Behavioral_Divider/src/divider.vhd|
+Z44 !s107 /home/cam/Quartus/Behavioral_Divider/src/divider.vhd|
+!i113 0
+R14
+R15
+Z45 w1667807681
+Z46 d/home/cam/Quartus/Behavioral_Divider/simulation
+Z47 F/home/cam/Quartus/Behavioral_Divider/src/divider.vhd
+Z48 8/home/cam/Quartus/Behavioral_Divider/src/divider.vhd
+Astructural_combinational
+R36
+R37
+R4
+R38
+R39
+!i122 301
+l40
+L24 45
+VkPY=bz:AkPfR>RS4BJMzf1
+!s100 ^>eRZgPSOIL`X[DzLZRAF1
+R40
+32
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 0
+R14
+R15
+R45
+R46
+R47
+R48
+Pdivider_const
+R3
+R4
+R5
+Z49 w1667866095
+R6
+Z50 8C:/Users/gyaan/Documents/behavioral_divider/src/divider_const.vhd
+Z51 FC:/Users/gyaan/Documents/behavioral_divider/src/divider_const.vhd
+l0
+L7
+VK;E^c2g`1<o9Q;j05VA<g2
+!s100 Glz4@z_ldiT]UG_P@cUSb2
+R9
+32
+b1
+Z52 !s110 1667866100
+!i10b 1
+R11
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gyaan/Documents/behavioral_divider/src/divider_const.vhd|
+Z54 !s107 C:/Users/gyaan/Documents/behavioral_divider/src/divider_const.vhd|
+!i113 1
+R14
+R15
+Bbody
+R16
+R3
+R4
+R5
+l0
+L17
+VM0WY23_gTNTdzL<kL<@7H1
+!s100 91ZfOdakE@FadLB[8^zLc0
+R9
+32
+R52
+!i10b 1
+R11
+R53
+R54
+!i113 1
+R14
+R15
+Edivider_tb
+Z55 w1667866086
+R16
+R3
+Z56 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R4
+R5
+R6
+Z57 8C:/Users/gyaan/Documents/behavioral_divider/src/divider_tb.vhd
+Z58 FC:/Users/gyaan/Documents/behavioral_divider/src/divider_tb.vhd
+l0
+L9
+V]jUZ<T]WG7e<Bz?g4H3Zb1
+!s100 UHiO<jBNE2OKdWaCE?k0g0
+R9
+32
+R10
+!i10b 1
+R19
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gyaan/Documents/behavioral_divider/src/divider_tb.vhd|
+Z60 !s107 C:/Users/gyaan/Documents/behavioral_divider/src/divider_tb.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R35
+R16
+R3
+R56
+R4
+R5
+Z61 DEx4 work 10 divider_tb 0 22 ]jUZ<T]WG7e<Bz?g4H3Zb1
+l55
+L12
+Vi>JC[CGOe8fO:0jDo6ZjV3
+!s100 L?V@:FNKo?znlD:Sf8UWS0
+R9
+32
+R10
+!i10b 1
+R19
+R59
+R60
+!i113 1
+R14
+R15
+Eleddcd
+R2
+R4
+R5
+R6
+Z62 8C:/Users/gyaan/Documents/behavioral_divider/src/leddcd.vhd
+Z63 FC:/Users/gyaan/Documents/behavioral_divider/src/leddcd.vhd
+l0
+L5
+VWoVClnmQ`:kIogjF3`EVS0
+!s100 0IabK`knRP6=N2X>dlk6D3
+R9
+32
+R52
+!i10b 1
+R11
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gyaan/Documents/behavioral_divider/src/leddcd.vhd|
+Z65 !s107 C:/Users/gyaan/Documents/behavioral_divider/src/leddcd.vhd|
+!i113 1
+R14
+R15
+Adata_flow
+R4
+R5
+DEx4 work 6 leddcd 0 22 WoVClnmQ`:kIogjF3`EVS0
+l13
+L12
+VzW@6GdmFAR1zNBIUnU>L51
+!s100 ;?]7XU=I=gY^fli?llLeo2
+R9
+32
+R52
+!i10b 1
+R11
+R64
+R65
+!i113 1
+R14
+R15

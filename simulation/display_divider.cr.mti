@@ -1,0 +1,59 @@
+C:/Users/gyaan/Documents/behavioral_divider/src/decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gyaan/Documents/behavioral_divider/src/decoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package decoder
+-- Compiling package body decoder
+-- Loading package decoder
+
+} {} {}} C:/Users/gyaan/Documents/behavioral_divider/src/divider_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gyaan/Documents/behavioral_divider/src/divider_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_STD
+-- Loading package divider_const
+-- Compiling entity divider_tb
+-- Compiling architecture behavioral of divider_tb
+-- Loading entity divider
+
+} {} {}} C:/Users/gyaan/Documents/behavioral_divider/src/display_divider.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gyaan/Documents/behavioral_divider/src/display_divider.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package divider_const
+-- Compiling entity display_divider
+-- Compiling architecture structural of display_divider
+
+} {} {}} C:/Users/gyaan/Documents/behavioral_divider/src/comparator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gyaan/Documents/behavioral_divider/src/comparator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity comparator
+-- Compiling architecture behavioral of comparator
+
+} {} {}} C:/Users/gyaan/Documents/behavioral_divider/src/leddcd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gyaan/Documents/behavioral_divider/src/leddcd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity leddcd
+-- Compiling architecture data_flow of leddcd
+
+} {} {}} C:/Users/gyaan/Documents/behavioral_divider/src/comparator_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gyaan/Documents/behavioral_divider/src/comparator_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package divider_const
+-- Compiling entity comparator_tb
+-- Compiling architecture behavioral of comparator_tb
+
+} {} {}}
