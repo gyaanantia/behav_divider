@@ -6,8 +6,8 @@ use IEEE.numeric_std.all;
 
 package divider_const is
 
-  constant DIVIDEND_WIDTH : natural := 32;
-  constant DIVISOR_WIDTH : natural := 16;
+  constant DIVIDEND_WIDTH : natural := 8;
+  constant DIVISOR_WIDTH : natural := 4;
   --Other constants, types, subroutines, components go here
   function get_msb_pos ( vec: std_logic_vector) return integer;
   type state is (idle, init, b_eq_1, l00p, epilogue);

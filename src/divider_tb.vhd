@@ -11,8 +11,6 @@ end entity divider_tb;
 
 architecture behavioral of divider_tb is
 
-  -- type state is (idle, init, b_eq_1, l00p, epistemology);
-
   component divider is
       port(
         -- Input ports
@@ -91,8 +89,8 @@ begin
 	 
     stimulus_testinput : process is
         variable curr_line : line;
-        file file_in: text open read_mode is "../src/divider32.in";
-        file file_out: text open write_mode is "../src/divider32.out";
+        file file_in: text open read_mode is "../src/divider16.in";
+        file file_out: text open write_mode is "../src/divider16.out";
 
         variable var_DIVIDEND : integer;
         variable var_DIVISOR : integer;
@@ -110,7 +108,7 @@ begin
             sig_DIVISOR <= std_logic_vector(to_signed(var_DIVISOR, DIVISOR_WIDTH));
 				wait for 100 ns;
 				sig_START <= '1';
-				wait for 100 ns;
+				wait for 200 ns;
 				sig_START <= '0';
             wait for 3000 ns;
 				

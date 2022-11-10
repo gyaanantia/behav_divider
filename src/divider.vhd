@@ -30,46 +30,42 @@ architecture fsm_behavior of divider is
 
 	-- type state is (idle, init, b_eq_1, l00p, epilogue);
 	signal next_state, curr_state : state;
-	signal a, a_next, q, q_next : std_logic_vector(DIVIDEND_WIDTH - 1 downto 0);
-	signal b, b_next : std_logic_vector(DIVISOR_WIDTH - 1 downto 0);
+	signal a, a_next, q, q_next : std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
+	signal b, b_next : std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
 
-	
 begin
 	-- debugging
 	-- a_out <= a;
 	-- b_out <= b;
 	-- q_out <= q;
 	-- state_out <= curr_state;
-	----
-	StateRegisters : process (clk, reset, start) is
+	--
+	StateRegisters : process (clk, reset) is
 	begin
-		if (rising_edge(clk))  then
-			if (reset = '1') then
-				curr_state <= idle;
-				a <= std_logic_vector(abs(signed(dividend)));
-				b <= std_logic_vector(abs(signed(divisor)));
-				q <= std_logic_vector(to_unsigned(0, DIVIDEND_WIDTH));
-			elsif (start = '1') then
-				curr_state <= init;
-				a <= std_logic_vector(abs(signed(dividend)));
-				b <= std_logic_vector(abs(signed(divisor)));
-				q <= (others => '0');
-			else
-				curr_state <= next_state;
-				a <= a_next;
-				b <= b_next;
-				q <= q_next;
-			end if;
+		if (reset = '1') then
+			curr_state <= idle;
+			a <= std_logic_vector(abs(signed(dividend)));
+			b <= std_logic_vector(abs(signed(divisor)));
+			q <= std_logic_vector(to_unsigned(0, DIVIDEND_WIDTH));
+		elsif (rising_edge(clk)) then
+			curr_state <= next_state;
+			a <= a_next;
+			b <= b_next;
+			q <= q_next;
 		end if;
 	end process StateRegisters;
 
-	DivMagoo : process (a, b, q, curr_state) is
+	DivMagoo : process (a, b, q, start, curr_state) is
 		variable p : integer;			
 		variable internal_sign : std_logic;
 		variable one : std_logic_vector(DIVIDEND_WIDTH-1 downto 0) := (0 => '1', others => '0');
 		variable q_plus_one, a_minus_b : integer;
-		variable minus_q : integer;
+		variable minus_q, remainder_condition : integer;
 	begin
+		next_state <= curr_state;
+		a_next <= a;
+		b_next <= b;
+		q_next <= q;
 		case (curr_state) is
 
 			when idle =>
@@ -112,11 +108,12 @@ begin
 				-- update q_next
 				q_plus_one := to_integer(signed(q)) + to_integer(shift_left(signed(one), p));
 				q_next <= std_logic_vector(to_signed(q_plus_one, DIVIDEND_WIDTH));
-				-- update a_next
-				a_minus_b := to_integer(signed(a)) - to_integer(shift_left(resize(signed(b), DIVIDEND_WIDTH), p));
-				a_next <= std_logic_vector(to_signed(a_minus_b, DIVIDEND_WIDTH));
-				if ((signed(b) /= 0) and (signed(b) < signed(a))) then
+
+				if ((signed(b) /= 0) and (signed(b) <= signed(a))) then
 					-- want to come back and check the if statement again
+					-- update a_next
+					a_minus_b := to_integer(signed(a)) - to_integer(shift_left(resize(signed(b), DIVIDEND_WIDTH), p));
+					a_next <= std_logic_vector(to_signed(a_minus_b, DIVIDEND_WIDTH));
 					next_state <= l00p;
 				else
 					next_state <= epilogue;
@@ -133,13 +130,20 @@ begin
 					quotient <= std_logic_vector(to_signed(minus_q, DIVIDEND_WIDTH));
 				end if;
 
-				if (to_integer(shift_right(signed(dividend), DIVIDEND_WIDTH - 1)) /= 1) then
+				remainder_condition := to_integer(shift_right(signed(dividend), DIVIDEND_WIDTH - 1));
+				if (remainder_condition /= 1) then
 					remainder <= std_logic_vector(to_signed((to_integer(signed(a(DIVISOR_WIDTH - 1 downto 0)))), DIVISOR_WIDTH));
 				else
 					remainder <= std_logic_vector(to_signed((to_integer(-signed(a(DIVISOR_WIDTH - 1 downto 0)))), DIVISOR_WIDTH));
 				end if;
 
 				next_state <= idle;
+			
+			when others =>
+				next_state <= idle;
+				a_next <= a;
+				b_next <= b;
+				q_next <= q;
 
 		end case;
 	end process DivMagoo;
